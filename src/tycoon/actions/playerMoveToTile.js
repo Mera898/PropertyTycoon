@@ -35,6 +35,7 @@ class PlayerMoveToTile extends BaseAction {
 	 */
 	do(game, player) {
 		// player is moved to tile with tile id this.tileId in this.direction
+		 player.PlayerMoveToTile(tileId, direction);
 		console.log(player);
 	}
 }
