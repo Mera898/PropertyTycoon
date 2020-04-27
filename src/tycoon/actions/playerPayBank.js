@@ -29,6 +29,8 @@ class PlayerPayBank extends BaseAction {
 	 */
 	do(game, player) {
 		// player pays bank this.cash amount
+		player.withdraw(cash);
+        	game.bank.deposite(cash);
 		console.log(player);
 	}
 }
