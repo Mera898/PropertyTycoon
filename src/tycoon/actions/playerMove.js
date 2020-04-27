@@ -35,6 +35,12 @@ class PlayerMove extends BaseAction {
 	do(game, player) {
 		// player is moved this.direction this.steps steps
 		console.log(player);
+		if (direction == 1) {
+            		player.moveForwards(steps, direction);
+        	}
+       		else{
+            		player.moveBackwards(steps, direction);
+        	}
 	}
 }
 
